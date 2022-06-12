@@ -16,6 +16,8 @@ export function ApiStack({ stack, app }) {
                 },
             },
         },
+        // Enabled by default
+        cors: true,
         routes: {
             "GET /notes": "functions/list.main",
             "POST /notes": "functions/create.main",
